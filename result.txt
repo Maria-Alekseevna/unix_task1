@@ -1,0 +1,28 @@
+gcc -Wall -Wextra -O2 myprogram.c -o myprogram
+
+=== TEST 1: Create file A ===
+File A created
+
+=== TEST 2: Create sparse B ===
+
+=== TEST 3: gzip A and B ===
+
+=== TEST 4: Restore B -> C ===
+
+=== TEST 5: Block size 100 -> D ===
+
+=== TEST 6: stat sizes ===
+--- A ---
+Size: 4194305, Blocks: 8200
+--- A.gz ---
+Size: 4107, Blocks: 16
+--- B ---
+Size: 4194305, Blocks: 24
+--- B.gz ---
+Size: 4107, Blocks: 16
+--- C ---
+Size: 4194305, Blocks: 24
+--- D ---
+Size: 4194305, Blocks: 32
+
+=== DONE ===
